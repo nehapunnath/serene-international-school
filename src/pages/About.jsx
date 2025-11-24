@@ -116,7 +116,7 @@ const About = () => {
   return (
     <div className="min-h-screen overflow-hidden">
       {/* Attractive Header Section */}
-      <section className="relative py-32 bg-gradient-to-br from-slate-900 via-purple-900 to-blue-900 text-white overflow-hidden">
+      <section className="relative py-32 bg-gradient-to-br from-slate-900 via-blue-900 to-cyan-900 text-white overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-teal-400 via-purple-400 to-blue-400"></div>
@@ -143,9 +143,9 @@ const About = () => {
               </h1>
               
               <p className="text-2xl md:text-3xl text-gray-200 leading-relaxed font-sans">
-                Where <span className="text-teal-300 font-bold">tradition</span> meets{' '}
-                <span className="text-purple-300 font-bold">innovation</span> in creating{' '}
-                <span className="text-blue-300 font-bold">global citizens</span>
+                Where <span className="text-blue-300 font-bold">tradition</span> meets{' '}
+                <span className="text-cyan-300 font-bold">innovation</span> in creating{' '}
+                <span className="text-teal-300 font-bold">global citizens</span>
               </p>
 
               <div className="grid grid-cols-2 gap-6 pt-8">
@@ -187,11 +187,11 @@ const About = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <div className="animate-bounce">
             <div className="w-1 h-8 bg-white/80 rounded-full mx-auto"></div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Mission & Vision Section */}
@@ -415,7 +415,7 @@ const About = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+      {/* <section className="py-20 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
         <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-teal-100 to-cyan-100 rounded-full -translate-x-36 -translate-y-36 blur-3xl"></div>
         <div className="absolute bottom-0 right-0 w-72 h-72 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full translate-x-36 translate-y-36 blur-3xl"></div>
         
@@ -443,7 +443,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

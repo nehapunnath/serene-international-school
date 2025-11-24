@@ -16,6 +16,7 @@ import {
   FaLightbulb
 } from 'react-icons/fa';
 import { HiAcademicCap } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -150,13 +151,13 @@ const Home = () => {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-6">
+            {/* <div className="flex flex-col sm:flex-row gap-6">
               <button className="group relative bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white px-12 py-5 rounded-2xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center justify-center overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
                 <span className="relative">Explore Campus</span>
                 <FaArrowRight className="w-5 h-5 ml-3 group-hover:translate-x-2 transition-transform" />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -175,12 +176,7 @@ const Home = () => {
           ))}
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
-          <div className="animate-bounce">
-            <div className="w-1 h-8 bg-white/80 rounded-full mx-auto"></div>
-          </div>
-        </div>
+      
       </section>
 
       {/* Redesigned Why Choose Us Section */}
@@ -348,10 +344,6 @@ const Home = () => {
                   <p className="text-gray-600 leading-relaxed text-lg font-sans mb-6">
                     {item.excerpt}
                   </p>
-                  <button className="group text-teal-600 hover:text-teal-700 font-bold text-lg flex items-center transform hover:translate-x-3 transition-all duration-300">
-                    <span>Read Full Story</span>
-                    <FaArrowRight className="w-5 h-5 ml-3 group-hover:scale-110 transition-transform" />
-                  </button>
                 </div>
               </div>
             ))}
@@ -379,10 +371,13 @@ const Home = () => {
             every student's unique journey. Together, we'll unlock potential and create lasting impact.
           </p>
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+            <Link to={'/contact'}>
             <button className="group relative bg-gradient-to-r from-teal-500 to-cyan-600 hover:from-teal-600 hover:to-cyan-700 text-white px-16 py-6 rounded-2xl font-bold text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-3xl flex items-center overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
               <span className="relative">Contact</span>
             </button>
+            </Link>
+            
             
             
           </div>

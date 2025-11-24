@@ -78,9 +78,9 @@ const Academics = () => {
       description: "Internationally recognized academic programs"
     },
     {
-      icon: <FaAward className="text-4xl" />,
-      title: "AP Courses",
-      description: "College-level advanced placement courses"
+      icon: <FaUsers className="text-4xl" />,
+      title: "Expert Faculty",
+      description: "Highly qualified and experienced teaching staff"
     },
     {
       icon: <FaRocket className="text-4xl" />,
@@ -269,11 +269,11 @@ const Academics = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        {/* <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
           <div className="animate-bounce">
             <div className="w-1 h-8 bg-white/80 rounded-full mx-auto"></div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       {/* Academic Levels Section */}
